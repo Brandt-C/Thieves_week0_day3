@@ -21,25 +21,30 @@ def voter_age(num):
 
 names = ['daniel', 'stephen', 'gianni', 'marina', 'heather']
 
-def list_name():
-    for name in names:
-        last = input('What is your last name?    ')
-        print(name.title() + ' ' + last.title())
-# list_name()
+names2 = names[:]
+print(names, names2)
+names.append('brandt')
+names2.append('Lee')
+print(names, names2)
+# def list_name():
+#     for name in names:
+#         last = input('What is your last name?    ')
+#         print(name.title() + ' ' + last.title())
+# # list_name()
 
-def namer():
-    n_list = []
-    while True:
-        menu = input('add name?   y/n  ')
-        if menu != 'n':
-            name = input('what is your name?')
-            n_list.append(name.title())
-        else:
-            break
-    for i in range(len(n_list)):
-        print(f"{i+1}- {n_list[i]}")
+# def namer():
+#     n_list = []
+#     while True:
+#         menu = input('add name?   y/n  ')
+#         if menu != 'n':
+#             name = input('what is your name?')
+#             n_list.append(name.title())
+#         else:
+#             break
+#     for i in range(len(n_list)):
+#         print(f"{i+1}- {n_list[i]}")
 
-namer()
+# namer()
 
 
 
